@@ -1,0 +1,169 @@
+<html lang="ru">
+{% load static %}
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<link rel="shortcut icon" src='{% static "img/Box.png"%}' type="image/png">
+		<!-- Заголовок страницы в браузере -->
+		<title>Аккаунт</title>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="{% static 'css/AccountStyle.css' %}">
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=1440">
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+<div class="MAIN">
+	<div class="FlexMainHeader">
+		<div class="FlexSecond2">
+	<div class="stripe"></div>
+	<div class="smallstripe">
+	<div class="LOGO"><a href="{% url 'Main' %}">ИМПОРТОЗАМЕЩЕНИЕ</a></div>
+	</div>
+</div>
+    <div class="FlexSecond">
+	 <ul class="MENUbutton">
+		<li class ="MB" ><a  href="#TopNish"  class="MB1"> <img src='{% static "img/5.png"%}'></a></li>
+		<li class ="MB"><a href="{% url 'Main' %}" class="MB1"> <img src='{% static "img/8.png"%}'></a></li>
+		<li class ="MB"><a href="{% url 'Main' %}" class="MB1"> <img src='{% static "img/4.png"%}'></a></li>
+		<li class ="MB"><a href="{% url 'Base' %}" class="MB1"> <img src='{% static "img/1.png"%}'></a></li>
+		<li class ="MB"><a href="{% url 'Main' %}"class="MB1"> <img src='{% static "img/7.png"%}'></a></li>
+		<li class ="MB"><a href="{% url 'rate' %}" class="MB1"> <img src='{% static "img/3.png"%}'></a></li>
+	 </ul>
+	 <div class="searchbutton"></div>
+	<div class="saerchstripe">
+   <form>
+    <img src='{% static "img/10.png"%}' alt="" type="submit" name="submit"class="submit">
+  	<input type="text" name="text" class="search" placeholder="Поиск"> 
+</form> 
+	</div></div>  
+	<div class="FlexSecond1"><div class="city"></div><div class="smallstripe2"></div>
+	<div  class="ENTERY popup-open1"><a href="" class="entry">Вход</a>
+	<a href="" class="register">Регистрация</a></div>
+	
+    <div class="MenuOffice">
+	<a href="{% url 'acc' %}" class="office"><img src='{% static "img/11.png"%}'></a>
+    <a href="" class="like popup-open1"><img src='{% static "img/12.png"%}'></a>
+    <a href="" class="analys popup-open1"><img src='{% static "img/13.png"%}'></a>
+    </div>
+    <div class="langue"></div>
+	
+ </div>
+ </div> 
+ <img id="toTop" src='{% static "img/toTop.png"%}' alt="">
+</div>	<div class="BlockAccount1">
+	<div class="blockProfil"><div class="flexblock1"></div><span class="profilTitle">Профиль</span><a href="" class="ButtonEdit popup-open1">Редактировать</a>
+	</div>
+	<div class="blockMaininf">
+		<div class="ProfilInform">
+			<div class="PhotoBlock1"><img src='{% static "img/Photo.png"%}' alt="" class="Photo1"></div>
+			<span class="InfAboutPeople">Начальник отдела импортозамещения</span>
+			<ul>
+				<li class="FIO">Имя</li>
+				<li class="FIO">Фамилия</li>
+				<li class="FIO">Отчество</li>
+			</ul>
+			<span class="someinfabout">Описание профиля. Немного информации осебе. Ну или тут можно написать все что угодно</span>
+			<img src='{% static "img/ship.png"%}' alt="" class="ship">
+		</div>
+
+		<div class="savedfiles">
+			<span class="titlesaved">Сохраненные нищи</span>
+			<ul><li class="SavedNisha"></li>
+			<li class="SavedNisha"></li>
+			<li class="SavedNisha"></li>
+			<li class="SavedNisha"></li>
+			<li class="SavedNisha"></li>
+			<li class="SavedNisha"></li>
+			<li class="SavedNisha"></li>
+			<li class="SavedNisha"></li></ul>
+	
+		<a href="" class="ButtonAllNish popup-open1">Открыть полный список</a>
+		<span class="SavedFileTitle">Сохраненные файлы</span>
+		  <ul>
+		  	<li class="SavedFile"></li>
+		  	<li class="SavedFile"></li>
+		  	<li class="SavedFile"></li>
+		  	<li class="SavedFile"></li>
+		  </ul>
+		  <a href="" class="bUTTONSAVEDfILES popup-open1">Скачать все</a>	</div>
+		<div class="history">
+			<span class="TitleHistoryPr">История просмотров</span>
+			<div class="parent">
+			<div class="div1 P1"> </div>
+			<div class="div2 P1"> </div>
+			<div class="div3 P1"> </div>
+			<div class="div4 P1"> </div>
+			</div>
+			<span class="TitleIzbrannoe">Последнее в избранном</span>
+				<div class="parent">
+			<div class="div1 P1"> </div>
+			<div class="div2 P1"> </div>
+			<div class="div3 P1"> </div>
+			<div class="div4 P1"> </div>
+			</div>
+			<a href="" class="Buttonizbrannoe popup-open1">Перейти в избранное</a>
+
+		</div>
+		<div class="settings">
+			<ul>
+				<li class="imgsettings"><img src='{% static "img/sat1.png"%}' alt=""></li>
+				<li class="imgsettings"><img src='{% static "img/sat2.png"%}' alt=""></li>
+				<li class="imgsettings"><img src='{% static "img/sat3.png"%}' alt=""></li>
+				<li class="imgsettings"><img src='{% static "img/sat4.png"%}' alt=""></li>
+				<li class="imgsettings"><img src='{% static "img/sat5.png"%}' alt=""></li>
+			</ul>
+			<ul>
+				<li class="Namesettings popup-open1 "><a href="">Настройки</a></li>
+				<li class="Namesettings popup-open1"><a href="">Избранное</a></li>
+				<li class="Namesettings popup-open1"><a href="">Диаграммы</a></li>
+				<li class="Namesettings popup-open1"><a href="">Файлы</a></li>
+				<li class="Namesettings popup-open1"><a href="">История</a></li>
+			</ul>
+		</div>
+	</div>
+
+<div class="popup-black1">
+    <div class="popup1">
+        <a class="popup-close1" href="#">X</a>
+
+       <p class="MainTextPopup1">Страница находится в разработке.</p>
+        <p class="MainTextPopup1">Мы приносим свои извинения, но страница пока что не доступна. Наши программисты трудятся над доработкой данныой страницы.</p>
+        <p class="MainTextPopup1">Скоро она будет доступна для просмотра.</p>
+    </div>
+</div>
+
+</div><div class="footer">
+	<img src='{% static "img/money.png"%}' alt="" class="money">
+	<img src='{% static "img/gruzovik.png"%}' alt="" class="gruzovik">
+	<div class="footercont">
+	<div class="kabinet">
+		<ul><li><a href="" class="footerssilka">ЛИЧНЫЙ КАБИНЕТ</a></li>
+		<li><a href="" class="footerssilka">СТАТИСТИКА</a></li>
+		<li><a href="" class="footerssilka">РЕГИСТРАЦИЯ</a></li></ul>
+	</div>
+	<div class="help">
+		<ul><li><a href="" class="footerssilka">ПОМОЩЬ</a></li>
+		<li><a href="" class="footerssilka">КОНТАКТЫ</a></li>
+		<li><a href="" class="footerssilka">FAQ</a></li></ul>
+	</div>
+	<div class="about"><ul><li><a href="" class="footerssilka">ПАРТНЕРЫ</a></li>
+	<li><a href="" class="footerssilka">О ПРОЕКТЕ</a></li>
+	<li><a href="" class="footerssilka">КАРТА ЦЕНТРОВ ОБСЛУЖИВАНИЯ</a></li></ul></div>
+	<div class="socseti"><ul><li><a href="" class="footerssilka">VK</a></li>
+	<li><a href="" class="footerssilka">TELEGRAM</a></li></ul></div>
+	<div class="mail"><ul><li><a href="" class="footerssilka">GMAIL</a></li>
+	<li><a href="" class="footerssilka">MAIL</a></li>
+	<li><a href="" class="footerssilka">YANDEX</a></li></ul></div>
+	<a href="" class="footerssilka helpus">ПОДДЕРЖАТЬ ПРОЕКТ</a>
+	</div>
+</div>
+			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+			<!-- Подключаем слайдер Slick -->
+			{% load static %}
+			<script src= "{% static 'js/slick.min.js' %}"></script>
+			<!-- Подключаем файл скриптов -->
+			{% load static %}
+			<script src="{% static 'js/script-dist.js' %}"></script>
+	</body>
+</html>

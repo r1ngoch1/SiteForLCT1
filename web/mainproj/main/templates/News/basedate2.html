@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		 <link rel="shortcut icon" href='{% static "img/Box.png"%}' type="image/png">
+		<!-- Заголовок страницы в браузере -->
+		<title>Импортозамещение</title>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="{% static 'css/BaseDataStyle2.css' %}">
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=1440">
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+
+<div class="MAIN">
+	<div class="FlexMainHeader">
+		<div class="FlexSecond2">
+	<div class="stripe"></div>
+	<div class="smallstripe">
+	<div class="LOGO"><a href="{% url 'Main' %}">ИМПОРТОЗАМЕЩЕНИЕ</a></div>
+	</div>
+</div>
+    <div class="FlexSecond">
+	 <ul class="MENUbutton">
+		<li class ="MB" ><a  href="#TopNish"  class="MB1"> <img src='{% static "img/5.png"%}'></a></li>
+		<li class ="MB"><a href="{% url 'Main' %}" class="MB1"> <img src='{% static "img/8.png"%}'></a></li>
+		<li class ="MB"><a href="{% url 'Main' %}" class="MB1"> <img src='{% static "img/4.png"%}'></a></li>
+		<li class ="MB"><a  href="{% url 'Base' %}" class="MB1"> <img src='{% static "img/1.png"%}'></a></li>
+		<li class ="MB"><a href="{% url 'Main' %}" class="MB1"> <img src='{% static "img/7.png"%}'></a></li>
+		<li class ="MB"><a href="{% url 'Main' %}" class="MB1"> <img src='{% static "img/3.png"%}'></a></li>
+	 </ul>
+	 <div class="searchbutton"></div>
+	<div class="saerchstripe">
+   <form>
+    <img src='{% static "img/10.png"%}' alt="" type="submit" name="submit"class="submit">
+  	<input type="text" name="text" class="search" placeholder="Поиск">
+</form>
+	</div></div>
+	<div class="FlexSecond1"><div class="city"></div><div class="smallstripe2"></div>
+	<div  class="ENTERY"><a href="" class="entry">Вход</a>
+	<a href="" class="register">Регистрация</a></div>
+
+    <div class="MenuOffice">
+	<a href="{% url 'acc' %}" class="office"><img src='{% static "img/11.png"%}'></a>
+    <a href="{% url 'acc' %}" class="like"><img src='{% static "img/12.png"%}'></a>
+    <a href="{% url 'acc' %}"  class="analys"><img src='{% static "img/13.png"%}'></a>
+    </div>
+    <div class="langue"></div>
+
+ </div>
+ </div>
+ <img id="toTop" src='{% static "img/toTop.png"%}' alt="">
+</div>	<div class="ContentBlock1">
+	<div class="flexconteinerblock1"><img src='{% static "img/cloudimg.png"%}' alt="" class="cloudimg">
+		<div class="flexTextcomteinerblock1">
+	<p class="TitleData"><b>Рейтинг</b></p>
+	<p class="TextAboutPage">Полный список рейтинга</p>
+	<a href="https://disk.yandex.ru/d/yq1QNUU0001BMQ/" class="buttonPdf">Скачать CSV</a><a href="https://disk.yandex.ru/i/Lu89JDAY7mVhKA/" class="buttonExcel">Скачать PDF</a>
+   </div>
+	<img src='{% static "img/imgdata.png"%}' alt="" class="imgdata">
+</div></div>
+
+<div class="ContentBlock2">
+	<table class="DATA"><tr><th>Тип товаров</th><th>Рейтинг</th></tr>
+	{% for item_base in page_obj.object_list%}
+
+			<tr><th>{{item_base.type_name}}</th><th>{{item_base.rating}}</th></tr>
+
+	{% endfor %}</table>
+	<center>
+        {%if page_obj.has_previous %} {# whether the previous page exists #}
+            <a href="?page={{page_obj.previous_page_number}}"><</a> {# link to the prev page #}
+        {% endif %}
+        <span>{{page_obj.number}}</span> {# the current page number #}
+
+        {%if page_obj.has_next %} {# whether the next page exists #}
+            <a href="?page={{page_obj.next_page_number}}">></a> {# link to the next page #}
+        {% endif %}
+    </center>
+
+
+	<div class="popup-black1">
+    <div class="popup1">
+        <a class="popup-close1" href="#">X</a>
+
+        <p class="MainTextPopup1">Cервис, который на основе анализа таможенной статистики позволит предпринимателям определить ниши на российском рынке с преобладанием импортных товаров и выбрать перспективные направления для создания импортозамещающего бизнеса.</p>
+
+    </div>
+</div>
+
+<div class="footer">
+	 <img src='{% static "img/money.png"%}' alt="" class="money">
+	<img src='{% static "img/gruzovik.png"%}' alt="" class="gruzovik">
+	<div class="footercont">
+	<div class="kabinet">
+		<ul><li><a href="" class="footerssilka">ЛИЧНЫЙ КАБИНЕТ</a></li>
+		<li><a href="" class="footerssilka">СТАТИСТИКА</a></li>
+		<li><a href="" class="footerssilka">РЕГИСТРАЦИЯ</a></li></ul>
+	</div>
+	<div class="help">
+		<ul><li><a href="" class="footerssilka">ПОМОЩЬ</a></li>
+		<li><a href="" class="footerssilka">КОНТАКТЫ</a></li>
+		<li><a href="" class="footerssilka">FAQ</a></li></ul>
+	</div>
+	<div class="about"><ul><li><a href="" class="footerssilka">ПАРТНЕРЫ</a></li>
+	<li><a href="" class="footerssilka">О ПРОЕКТЕ</a></li>
+	<li><a href="" class="footerssilka">КАРТА ЦЕНТРОВ ОБСЛУЖИВАНИЯ</a></li></ul></div>
+	<div class="socseti"><ul><li><a href="" class="footerssilka">VK</a></li>
+	<li><a href="" class="footerssilka">TELEGRAM</a></li></ul></div>
+	<div class="mail"><ul><li><a href="" class="footerssilka">GMAIL</a></li>
+	<li><a href="" class="footerssilka">MAIL</a></li>
+	<li><a href="" class="footerssilka">YANDEX</a></li></ul></div>
+	<a href="" class="footerssilka helpus">ПОДДЕРЖАТЬ ПРОЕКТ</a>
+	</div>
+</div>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+			<!-- Подключаем слайдер Slick -->
+			{% load static %}
+			<script src= "{% static 'js/slick.min.js' %}"></script>
+			<!-- Подключаем файл скриптов -->
+			{% load static %}
+			<script src="{% static 'js/script-dist.js' %}"></script>
+	</body>
+</html>

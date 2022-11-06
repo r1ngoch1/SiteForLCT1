@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		 <link rel="shortcut icon" href='{% static "img/Box.png"%}' type="image/png">
+		<!-- Заголовок страницы в браузере -->
+		<title>Импортозамещение</title>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="{% static 'css/style.css' %}">
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=1440">
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+
+<div class="MAIN">
+	<div class="FlexBlueLine">
+		<div class="BlueLine"></div>
+
+
+
+	<div class="FlexMainHeader">
+		<div class="FlexSecond2">
+	<div class="stripe"></div>
+	<div class="smallstripe">
+	<div class="LOGO"><a href="{% url 'Main' %}">ИМПОРТОЗАМЕЩЕНИЕ</a></div>
+	</div>
+</div>
+    <div class="FlexSecond">
+	 <ul class="MENUbutton">
+		<li class ="MB" ><a  href="#TopNish"  class="MB1"> <img src='{% static "img/5.png"%}'></a></li>
+		<li class ="MB"><a href="" class="MB1"> <img src='{% static "img/8.png"%}'></a></li>
+		<li class ="MB"><a href="" class="MB1"> <img src='{% static "img/4.png"%}'></a></li>
+		<li class ="MB"><a  href="{% url 'Base' %}" class="MB1"> <img src='{% static "img/1.png"%}'></a></li>
+		<li class ="MB"><a href="#Filter"class="MB1"> <img src='{% static "img/7.png"%}'></a></li>
+		<li class ="MB"><a href="{% url 'rate' %}" class="MB1"> <img src='{% static "img/3.png"%}'></a></li>
+	 </ul>
+	 <div class="searchbutton"></div>
+	<div class="saerchstripe">
+   <form>
+    <img src='{% static "img/10.png"%}' alt="" type="submit" name="submit"class="submit">
+  	<input type="text" name="text" class="search" placeholder="Поиск">
+</form>
+	</div></div>
+	<div class="FlexSecond1"><div class="city"></div><div class="smallstripe2"></div>
+	<div  class="ENTERY popup-open"><a href="" class="entry">Вход</a>
+	<a href="" class="register popup-open">Регистрация</a></div>
+
+    <div class="MenuOffice">
+	<a href="{% url 'acc' %}" class="office"><img src='{% static "img/11.png"%}'></a>
+    <a href="" class="like popup-open"><img src='{% static "img/12.png"%}'></a>
+    <a href="" class="analys popup-open"><img src='{% static "img/13.png"%}'></a>
+    </div>
+    <div class="langue"></div>
+
+ </div>
+ </div>
+	</div>
+ <img id="toTop" src='{% static "img/toTop.png"%}' alt="">
+</div>	<div class="block1">
+	<div class="FlexBlock1">
+<img class="CityCase" src='{% static "img/case.png"%}' alt="" >
+<div class="tegblock">
+	<ul><li><a href="" class="teg"><span class="teg2 popup-open">#Бананы</span></a></li>
+	<li><a href="" class="teg"><span class="teg1 popup-open">#Краска</span></a>
+</li>
+	<li><a href="" class="teg popup-open"><span class="teg3 popup-open">#Драгоценные металлы</span></a></li>
+	<li><a href="" class="teg popup-open"><span class="teg4 popup-open">#Строительство</span></a></li></ul>
+		<ul><li><a href="" class="teg popup-open"><span class="teg5 popup-open">#Сухофрукты</span></a></li>
+	<li><a href="" class="teg popup-open"><span class="teg6 popup-open">#Древесина</span></a>
+</li>
+	<li><a href="" class="teg popup-open"><span class="teg7 popup-open">#Крупы</span></a></li>
+	<li><a href="" class="teg popup-open"><span class="teg8 popup-open">#Мясо</span></a
+></li></ul>
+		<ul><li><a href="" class="teg popup-open"><span class="teg9">#Химическая промышленность</span></a></li>
+	<li><a href="" class="teg popup-open"><span class="teg10">#Резина и пластмассы</span></a>
+</li>
+	<li><a href="" class="teg popup-open"><span class="teg11 popup-open">#Целлюлозно-бумажная</span></a></li>
+	<li><a href="" class="teg popup-open"><span class="teg1 popup-open">#Краска</span></a>
+</li></ul>
+
+
+
+
+
+
+
+</div>
+<img class="NotebookSearh" src='{% static "img/search.png"%}' alt="">
+</div>
+
+</div>
+
+<div class="blok2">
+		<img src='{% static "img/hands.png"%}' alt="" class="hands">
+		<div class="TextBlock"><h1 class="title1"><b>Импортозамещение</b></h1>
+	<p class='tekst1'>Рекомендательный сервис по выявлению перспективных<br>
+   производственных ниш на основе таможенной
+	<br>статистики
+</p>
+	<div class="buttonmore"><a href="" class="more popup-open1">Подробнее</a></div></div>
+
+	<img src='{% static "img/plain.png"%}' alt="" class="plain">
+</div>
+<div class="block3">
+	<div class="FlexConteiner1">
+	<img src='{% static "img/conteiner.png"%}'" alt="" class="contenir"><div class="TekstTitle2">
+	<h2 class="title2"><b>Актуальность</b></h2>
+	<p class="tekst2">В настоящее время российские предприниматели<br> нуждаются в помощи по выявлению перспективных<br> ниш и производственных отраслей для создания или<br> развития бизнеса и импортозамещения в стране.<br>
+    Сервис позволит сконцентрироваться на<br> приоритетной отрасли и создаст новые механизмы<br> наращивания инвестиций.</p></div>
+</div>
+</div>
+<div class="block4">
+	<img src='{% static "img/news.png"%}' alt="" class="NewsIMG">
+	<div class="selector"></div>
+	<div class="wrapper">
+			<!-- Контент -->
+			<div class="slider">
+				{%for item_news in news%}
+				<div class="slider__item filter">
+					<div class="News"><b>{{ item_news.content }}</b></div>
+				</div>
+				{% endfor %}
+			</div>
+
+	</div>
+	</div>
+</div><div class="block5">
+	<a  name="TopNish" id="TopNish" href=""></a>
+	<div class="FlexStroki">
+	<p class="NishiNew" ><b>Список перспективных ниш на данный момент вследствие анализа системой баз данных</b></p>
+
+	<div class="BlockFlexNish">
+	<div class="spisok1"><ul>
+		{% for rate in rating %}
+		<li class="S1"> {{ rate.type_name}}</li>
+        {% endfor %}
+	</ul></div><img src='{% static "img/table.png"%}' alt="" class="DisTableIMG">
+	<div class="spisok2"><ul>
+		{% for rate in rating2 %}
+	<li class="S1">{{ rate.type_name}}</li>
+		{% endfor %}
+
+	</ul></div>
+	</div><a  href="{% url 'rate' %}" class="MoNishButton">Открыть полный список</a>
+   </div>
+
+</div>
+<div class="block6">
+	<a name="Filter" id="Filter" href=""></a>
+	<div class="FlexDiogram">
+		<div class="FlexNAMEfilter">
+	<div class="Nameconteiner">
+	<img src='{% static "img/Filter.png"%}' alt="" class="FilterIMG"><p class="NameFilter">Фильтр</p></div>
+	<div class="MenuFilter">
+		<ul>
+			<li>
+
+	     	<select class="PoleNameFilter">
+	<option>Отрасль</option>
+	<option></option>
+	<option></option>
+	<option></option>
+	<option></option>
+         	</select>
+
+			</li>
+			<li >
+		   <select class="PoleNameFilter">
+	<option>Продукция</option>
+	<option></option>
+	<option></option>
+	<option></option>
+         	</select>
+			</li>
+			<li>
+			<select class="PoleNameFilter">
+	<option>Страна</option>
+	<option></option>
+	<option></option>
+	<option></option>
+         	</select>
+			</li>
+			<li>
+			<select class="PoleNameFilter">
+	<option>Цена</option>
+	<option></option>
+	<option></option>
+	<option></option>
+         	</select>
+			</li>
+			<li  >
+		 	<select class="PoleNameFilter">
+	<option >Год</option>
+	<option></option>
+	<option></option>
+	<option></option>
+         	</select>
+			</li>
+		</ul>
+		<div class="ButtonClear">Сбросить</div>
+		<div class="ButtonReady">Готово</div>
+	</div>
+	</div><div class="productandbutton">
+   <div class="ProductConteiner">
+   	<ul><li class="color1"></li>
+   	<li class="color2"></li>
+   	<li class="color3"></li>
+   	<li class="color4"></li>
+   	<li class="color5"></li></ul>
+   	<ul><li class="Product">Арбузы</li>
+   	<li class="Product">Апельсины</li>
+   	<li class="Product">Дыни</li>
+   	<li class="Product">Бананы</li>
+   	<li class="Product">Яблоки</li></ul></div>
+   	<a href="" class="ButtonProductMore popup-open">Открыть полный список</a></div>
+   	<div class="ConteinerDiagramma">
+   		<div class="TitleStatistika">Статистика</div>
+   		<div class="FiveDiCont">
+   		<div class="pie" style="--p:30; --c:#228B22;--z:100">30%</div>
+   	<div class="pie" style="--p:30;--z:1000; --c:#66CDAA">30%</div>
+   	<div class="pie" style="--p:19; --c:#FA8072;--z:100">19%</div>
+   	<div class="pie" style="--p:15;--z:1000;
+   	 --c:#DAA520">15%</div>
+   	<div class="pie" style="--p:6; --c:#FF1493;--z:100">6%</div></div>
+   	<div class="flexstatistika">
+   	<div class="vigodnee">
+   	<span class="Vigoda">Выгоднее всего</span>
+   	<ul>
+   		<li class="DataTovara">Апельсины</li>
+   		<li class="DataTovara">СНГ</li>
+   		<li class="DataTovara">0.23$</li>
+   		<li class="DataTovara">2019</li>
+   	</ul>
+   </div>
+   <div class="vigodnee">
+   	<span class="Vigoda">Выбрано</span>
+   	<ul>
+   		<li class="DataTovara">Апельсины</li>
+   		<li class="DataTovara">Китай</li>
+   		<li class="DataTovara">0.43$</li>
+   		<li class="DataTovara">2018</li>
+   	</ul>
+   </div>
+   </div><div class="FlexLastBox">
+    <div class="Ocenk">
+    	<span class="TitleOCENKA">Оценка</span>
+   	<ul>
+   		<li class="Dataliocenka">Выгодно</li>
+   		<li class="Dataliocenka">Нет перспектив</li>
+
+   	</ul>
+    </div>
+    <div class="PoslednieNews">
+    	<span class="titlenewsstatistica">Последние изменения</span>
+    	<span class="TextStatistica">Данные отстуствуют</span>
+    </div>
+   </div>
+
+   </div>
+   </div>
+
+
+ </div>
+   </div>
+</div>
+<div class="popup-black">
+    <div class="popup">
+        <a class="popup-close" href="#">X</a>
+        <p class="TitlePopup">Страница находится в разработке.</p>
+        <p class="MainTextPopup">Мы приносим свои извинения, но страница пока что не доступна. Наши программисты трудятся над доработкой данныой страницы.</p>
+        <p class="MainTextPopup">Скоро она будет доступна для просмотра.</p>
+    </div>
+</div>
+
+<div class="popup-black1">
+    <div class="popup1">
+        <a class="popup-close1" href="#">X</a>
+
+        <p class="MainTextPopup1">Cервис, который на основе анализа таможенной статистики позволит предпринимателям определить ниши на российском рынке с преобладанием импортных товаров и выбрать перспективные направления для создания импортозамещающего бизнеса.</p>
+
+    </div>
+</div>
+<div class="footer">
+	 <img src='{% static "img/money.png"%}' alt="" class="money">
+	<img src='{% static "img/gruzovik.png"%}' alt="" class="gruzovik">
+	<div class="footercont">
+	<div class="kabinet">
+		<ul><li><a href="" class="footerssilka">ЛИЧНЫЙ КАБИНЕТ</a></li>
+		<li><a href="" class="footerssilka">СТАТИСТИКА</a></li>
+		<li><a href="" class="footerssilka">РЕГИСТРАЦИЯ</a></li></ul>
+	</div>
+	<div class="help">
+		<ul><li><a href="" class="footerssilka">ПОМОЩЬ</a></li>
+		<li><a href="" class="footerssilka">КОНТАКТЫ</a></li>
+		<li><a href="" class="footerssilka">FAQ</a></li></ul>
+	</div>
+	<div class="about"><ul><li><a href="" class="footerssilka">ПАРТНЕРЫ</a></li>
+	<li><a href="" class="footerssilka">О ПРОЕКТЕ</a></li>
+	<li><a href="" class="footerssilka">КАРТА ЦЕНТРОВ ОБСЛУЖИВАНИЯ</a></li></ul></div>
+	<div class="socseti"><ul><li><a href="" class="footerssilka">VK</a></li>
+	<li><a href="" class="footerssilka">TELEGRAM</a></li></ul></div>
+	<div class="mail"><ul><li><a href="" class="footerssilka">GMAIL</a></li>
+	<li><a href="" class="footerssilka">MAIL</a></li>
+	<li><a href="" class="footerssilka">YANDEX</a></li></ul></div>
+	<a href="" class="footerssilka helpus">ПОДДЕРЖАТЬ ПРОЕКТ</a>
+	</div>
+</div>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+			<!-- Подключаем слайдер Slick -->
+			{% load static %}
+			<script src= "{% static 'js/slick.min.js' %}"></script>
+			<!-- Подключаем файл скриптов -->
+			{% load static %}
+			<script src="{% static 'js/script-dist.js' %}"></script>
+	</body>
+</html>
